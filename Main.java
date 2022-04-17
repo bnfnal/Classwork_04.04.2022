@@ -15,9 +15,10 @@ public class Main
         String s = sc.next();
         System.out.println("Строка является пин-кодом");
         System.out.println(Pin.validatePin(s)) ;
+        System.out.println();
 
         // Task 2: How good are you really?
-        
+
         System.out.println("Введите ваш балл за тест (целое число)");
         int res = sc.nextInt();
         System.out.println("Введите массив целых чисел, разделяя числа пробелами (результаты ваших одноклассников)");
@@ -27,7 +28,18 @@ public class Main
             r[i] = Integer.parseInt(str[i]);
         }
         System.out.println("Ваш результат выше среднего?");
-        System.out.println(Test.betterThanAverage(r, res)) ;
+        System.out.println(Test.betterThanAverage(r, res));
+        System.out.println();
+
+        // Task 3: How good are you really?
+
+        System.out.println("Task 3: How good are you really?");
+        System.out.println("Введите натуральное число n");
+        Scanner sc1 = new Scanner(System.in);
+        int size = sc1.nextInt();
+        System.out.println("Последовательность из n чередующихся 1 и 0");
+        System.out.println(StringyStrings.stringy(size));
+        System.out.println();
     }
 
 
@@ -62,4 +74,21 @@ public class Main
         }
     }
 
+    // Task 3: How good are you really?
+
+    public static class StringyStrings
+    {
+        public static String stringy(int size)
+        {
+            String s = "";
+            for (int i=1; i<=size/2; i++)
+            {
+                s += "10";
+            }
+            if (size % 2 == 1) s+="1";
+            return s;
+        }
+    }
+
 }
+
