@@ -18,7 +18,8 @@ public class Main
         System.out.println();
 
         // Task 2: How good are you really?
-
+        
+        System.out.println("Task 2: How good are you really?");
         System.out.println("Введите ваш балл за тест (целое число)");
         int res = sc.nextInt();
         System.out.println("Введите массив целых чисел, разделяя числа пробелами (результаты ваших одноклассников)");
@@ -31,9 +32,9 @@ public class Main
         System.out.println(Test.betterThanAverage(r, res));
         System.out.println();
 
-        // Task 3: How good are you really?
+        // Task 3: Stringy Strings
 
-        System.out.println("Task 3: How good are you really?");
+        System.out.println("Task 3: Stringy Strings");
         System.out.println("Введите натуральное число n");
         Scanner sc1 = new Scanner(System.in);
         int size = sc1.nextInt();
@@ -74,7 +75,7 @@ public class Main
         }
     }
 
-    // Task 3: How good are you really?
+    // Task 3: Stringy Strings
 
     public static class StringyStrings
     {
