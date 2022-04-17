@@ -68,3 +68,40 @@ Your points are not included in the array of your class's points. For calculatin
     }
 
 
+## **Task 3: Stringy Strings**
+
+### **Class:** 
+                StringyStrings
+### **Function:**   
+                stringy(int size)
+
+### **Task:**
+
+write me a function stringy that takes a size and returns a string of alternating '1s' and '0s'.
+the string should start with a 1.
+The size will always be positive and will only use whole numbers.
+
+### **Examples:**
+
+a string with size 6 should return :'101010'.
+with size 4 should return : '1010'.
+with size 12 should return : '101010101010'.
+
+
+### **Favorite solution:**
+
+
+      public class Kata 
+      {
+        public static String stringy(int size) 
+        {
+          StringBuilder sb = new StringBuilder();
+          for(int i = 0; i < size; i++) 
+          {
+            sb.append((i+1)%2);
+          }
+          return sb.toString();
+       }
+     }
+      
+      
